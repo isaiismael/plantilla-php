@@ -13,19 +13,19 @@
                     <span>
                         <img src="../public/img-inicio/programar.png" class="img-inicio" alt="">
                         <!-- <i class="fas fa-sort-amount-up-alt"></i> -->
-                        <span class="lbl">CITAS</span>
+                        <span class="lbl">Test Vineland</span>
                     </span>
                     <ul>
                         <li>
                             <a href="preguntas.php" class="">
                                 <i class="fas fa-plus-square icono-submenu"></i>
-                                <span class="lbl">Entrevistar</span>
+                                <span class="lbl">Evaluar</span>
                             </a>
                         </li>
                         <li>
                             <a href="" class="">
                                 <i class="fas fa-th-list icono-submenu"></i>
-                                <span class="lbl">Lista de citas</span>
+                                <span class="lbl">Lista de Evaluaciones</span>
                             </a>
                         </li>
                     </ul>
