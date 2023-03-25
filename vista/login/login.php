@@ -21,9 +21,13 @@
             <img src="img/bg.svg">
         </div>
         <div class="login-content">
-            <form method="POST" action="../inicio.php">
+            <form method="POST" action="">
                 <img src="img/avatar.svg">
                 <h2 class="title">BIENVENIDO</h2>
+                <?php 
+                include "../../modelo/conexion.php";
+                include "../../controlador/login.php";
+                ?>
                 <!-- AQUI VA EL MENSAJE DE ERROR -->
                     <!-- <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
                         <small>mensaje de error</small>

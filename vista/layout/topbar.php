@@ -7,13 +7,13 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
         <meta content="ie=edge" http-equiv="x-ua-compatible">
-        <title>Plantilla-php</title>
+        <title>Vineland</title>
 
 
 
         <link href="https://tresplazas.com/web/img/big_punto_de_venta.png" rel="shortcut icon">
         <link href="../public/app/publico/css/lib/font-awesome/font-awesome.min.css" rel="stylesheet">
-        <link href="../public/bootstrap5/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="../public/bootstrap5/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 
         <link rel="stylesheet" href="../public/app/publico/css/lib/lobipanel/lobipanel.min.css">
         <link rel="stylesheet" href="../public/app/publico/css/separate/vendor/lobipanel.min.css">
@@ -135,12 +135,12 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right pt-0" aria-labelledby="dd-user-menu">
 
-                                    <h5 class="p-2 text-center bg-primary">Nombre y apellido del usuario</h5>
+                                    <h5 class="p-2 text-center bg-primary"><?= $_SESSION["nombre"]." ". $_SESSION["apellido"] ?></h5>
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-user"></span>Perfil</a>
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-lock"></span>Cambiar contraseña</a>
 
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="./login/login.php">
+                                    <a class="dropdown-item" href="../../controlador/controlador_logout.php">
                                         <span class="font-icon glyphicon glyphicon-log-out"></span>salir
                                     </a>
                                 </div>
@@ -163,3 +163,4 @@
 
         <div class="mobile-menu-left-overlay">
         </div>
+

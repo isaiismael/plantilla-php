@@ -32,3 +32,8 @@
 .input__select {
     font-size: 17px;
 }
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }

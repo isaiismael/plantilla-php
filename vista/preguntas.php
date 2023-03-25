@@ -1,8 +1,8 @@
 <?php
-session_start();
+ session_start();
 if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
-     header('location:login/login.php');
- }
+   header('location:login/login.php');
+  }
 
 ?>
 
@@ -15,6 +15,15 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
 <body>
 
 <div class="page-content">
+    <section id="preguntas">
+        <h3>preguntas</h3>
+        <div id="preguntas-contenedor">
+
+        </div>
+       
+    </section>
+   
+
 </div>
 
 <!-- fin del contenido principal -->

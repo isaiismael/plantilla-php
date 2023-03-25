@@ -1,0 +1,609 @@
+{
+    "dominio": "COMUNICACIÓN",
+    "subdominios": [
+        {
+            "subdominio": "Receptiva",
+            "enunciados": [
+                {
+                    "enunciado": "¿Voltea la cabeza en dirección del sonido?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Mira hacia la madre/padre o persona que lo cuida cuando escucha su voz?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Responde a su nombre dicho en voz alta?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Demuestra comprensión del significado del NO, o alguna palabra o gesto con el mismo significado?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Demuestra comprensión del significado del SI, o alguna palabra o gesto con el mismo significado?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Escucha un cuento por lo menos durante 5 minutos?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Señala por lo menos tres partes importantes del cuerpo cuando alguien se lo pide?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Señala objetos comunes dentro de un libro o una revista cuando se nombran?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Escucha instrucciones?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Sigue instrucciones con una acción y un objeto?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Señala por lo menos cinco partes de menor importancia del cuerpo cuando alguien se lo pide?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Sigue instrucciones con dos acciones o una acción y dos objetos?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Sigue instrucciones que contienen una condición?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Escucha un cuento por lo menos durante 15 minutos?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Escucha un cuento por lo menos durante 30 minutos?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Sigue instrucciones que contienen tres pasos?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Sigue instrucciones o indicaciones que escuchó 5 minutos antes?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Comprende expresiones que no deben interpretarse de forma literal?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Escucha un discurso informativo por lo menos durante 15 minutos?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Escucha un discurso informativo por lo menos durante 30 minutos?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                }
+            ]
+        },
+        {
+            "subdominio": "Expresiva",
+            "enunciados": [
+                {
+                    "enunciado": "¿Llora o se inquieta cuando tiene hambre o tiene el pañal mojado?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Llora o se inquieta cuando tiene hambre o tiene el pañal mojado?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Sonríe cuando la madre/padre o persona que lo cuida le sonríe?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Emite sonidos de placer?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Emite sonidos como un bebé (balbucea)?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Emite sonidos o gesticula si quiere que una actividad pare o continúe?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Emite sonidos o gesticula para llamar la atención?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Dice adiós con la mano cuando otra persona le saluda con la mano o cuando la madre/padre o persona que lo cuida le dice que salude con la mano?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Dice “Pa-pá”, “Ma-má”, u otro nombre para llamar a la madre/padre o persona que lo cuida?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Señala un objeto que desea y que no puede alcanzar?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Señala o hace gestos para indicar lo que prefiere si se le ofrece algo para escoger?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Repite o trata de repetir palabras comunes inmediatamente después de escucharlas?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Nombra por lo menos tres objetos comunes?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Pide cosas usando una palabra?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Usa el nombre o apodo de sus hermanos/as o amigos/as o dice sus nombres cuando se los preguntan?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Responde o intenta responder con palabras cuando le hacen una preguntas?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Nombra por lo menos 10 objetos?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Dice su propio nombre o apodo cuando se lo preguntan?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Usa frases que contienen un sustantivo y un verbo?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Hace preguntas cambiando la entonación de las palabras o frases?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Dice por lo menos 50 palabras reconocibles?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Usa palabras sencillas para describir cosas?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "¿Hace preguntas que comienzan con qué o dónde?",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Usa correctamente la terminación “-ando” “-iendo” (por ejemplo  “está cantando”, “está comiendo”, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Usa los posesivos en frases u oraciones (por ejemplo: “Ese es su libro”, Este es el perro de Carlos”, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Usa pronombres en fase frases u oraciones; debe usar el género correcto y la forma correcta del pronombre, pero las oraciones no tienen que estar gramaticalmente correctas (por ejemplo: “él lo hizo”, “ellos fueron”, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Hace preguntas que comienzan con Cuándo (por ejemplo: ¿cuándo estará la cena?, ¿cuándo podernos irnos para la casa?, Etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Usa verbos regulares en el tiempo pasado (por ejemplo: camine, cocine, etc.) puede usar los verbos irregulares en el tiempo pasado incorrectamente (por ejemplo: “ponío la mesa “, etc.) ",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Usa detrás de o frente a en frases u oraciones (por ejemplo: “caminé frente a ella“, “Tatiana está detrás de usted“, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Pronuncia las palabras claramente sin sustituciones de sonidos (por ejemplo: no dice “yégalo” para “Regalos“, “cacha” para “casa“, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Cuenta las partes básicas de una historia, cuento de hadas o un programa de televisión; no es necesario que lo narre en perfecto orden o con muchos detalles.",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Dice el mes y el día de su cumpleaños cuando se lo preguntan.",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Modula apropiadamente al hablar el tono de su voz, el volumen y el ritmo (por ejemplo: no habla en voz muy alta, de una manera suave o monótona, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Cuenta lo que sucedió con detalles (por ejemplo: dice quién participó, donde se llevó a cabo la actividad, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Da instrucciones sencillas (por ejemplo: como jugar un juego o cómo hacer algo). Marque “2” si las instrucciones son suficientemente claras para comprender; Marque “1” si el individuo articula instrucciones, pero no son suficientemente claras para comprender; Marque “0” si el individuo nunca intenta articular instrucciones.",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Usa entre en frases u oraciones (por ejemplo: “la pelota se fue por entre los carros“, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Dice su número de teléfono cuando se lo preguntan.",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Cuando está hablando, pasa de un tema a otro con facilidad.",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Se queda enfocado en el tema de conversación; no se va por la tangente.",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Explica sus ideas en más de una manera (por ejemplo, dice: “ese libro estuvo bueno. Fue emocionante y divertido leerlo“, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Tiene conversaciones que duran por lo menos 10 minutos (por ejemplo: cuenta sus experiencias, presenta sus ideas, comparte sus emociones, etc.).",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Usa correctamente los plurales irregulares (por ejemplo: peces, maníes, lápices, rubíes o, en inglés, Children, geese, love, o women, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Dice la dirección completa de su casa (es decir: calle o ruta rural, número de apartamento, ciudad y estado), con o sin el código postal, cuando se lo preguntan.",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Explica una meta a corto plazo y lo que necesita hacer para alcanzarla (por ejemplo: “quiero obtener una buena calificación en mi examen, así que voy a estudiar mucho“, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Da instrucciones complejas a otras personas (por ejemplo: como llegar a lugares alejados, recetas de cocina con muchos ingredientes o pasos, etc.)",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                },
+                {
+                    "enunciado": "Describe metas a largo plazo que quiere realizar en 6 meses o más (por ejemplo, dice, “quiero comprarme una bicicleta, así que voy a cuidar niños y hacer mandados para otras personas para tener suficiente dinero para comprármela).Marque “2” si las instrucciones son suficientemente claras para comprender; Marque “1” si el individuo articula instrucciones, pero no son suficientemente claras para comprender; Marque “0” si el individuo nunca intenta articular instrucciones.",
+                    "opciones": [
+                        "2",
+                        "1",
+                        "0",
+                        "dk"
+                    ]
+                }
+            ]
+        }
+    ]
+}

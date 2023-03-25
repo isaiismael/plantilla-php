@@ -17,9 +17,9 @@
                     </span>
                     <ul>
                         <li>
-                            <a href="" class="">
+                            <a href="preguntas.php" class="">
                                 <i class="fas fa-plus-square icono-submenu"></i>
-                                <span class="lbl">Registrar cita</span>
+                                <span class="lbl">Entrevistar</span>
                             </a>
                         </li>
                         <li>
