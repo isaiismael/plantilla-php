@@ -31,7 +31,22 @@
                     </ul>
                 </li>
 
-                
+                <li class="grey with-sub">
+                    <span>
+                        <img src="../public/img-inicio/programar.png" class="img-inicio" alt="">
+                        <!-- <i class="fas fa-sort-amount-up-alt"></i> -->
+                        <span class="lbl">Usuarios</span>
+                    </span>
+                    <ul>
+                        
+                        <li>
+                            <a href="" class="">
+                                <i class="fas fa-th-list icono-submenu"></i>
+                                <span class="lbl">Lista de Usuarios</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
                 <li class="red">
                     <a href="acerca.php" class="">
