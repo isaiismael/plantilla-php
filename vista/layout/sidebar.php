@@ -17,7 +17,7 @@
                     </span>
                     <ul>
                         <li>
-                            <a href="preguntas.php" class="">
+                            <a href="registroentrevistado.php" class="">
                                 <i class="fas fa-plus-square icono-submenu"></i>
                                 <span class="lbl">Evaluar</span>
                             </a>
@@ -32,15 +32,18 @@
                 </li>
 
                 <li class="grey with-sub">
+                    
                     <span>
+                    <a href="">
                         <img src="../public/img-inicio/programar.png" class="img-inicio" alt="">
                         <!-- <i class="fas fa-sort-amount-up-alt"></i> -->
                         <span class="lbl">Usuarios</span>
+                    </a>
                     </span>
+                    
                     <ul>
-                        
                         <li>
-                            <a href="" class="">
+                            <a href="listausuarios.php" class="">
                                 <i class="fas fa-th-list icono-submenu"></i>
                                 <span class="lbl">Lista de Usuarios</span>
                             </a>

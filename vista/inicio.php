@@ -11,14 +11,35 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
 <?php require('./layout/sidebar.php'); ?>
 
 <!-- inicio del contenido principal -->
-<body>
+
 
 <div class="page-content">
+
+    <table class="table" id="example">
+     <thead>
+       <tr>
+      <th scope="col">Id Usuario</th>
+      <th scope="col">Id Entrevistador</th>
+      <th scope="col">Id Respuesta</th>
+      <th scope="col">Respuesta</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    
+  </tbody>
+</table>
 </div>
 
 <!-- fin del contenido principal -->
   
-</body>
+
 
  
 
