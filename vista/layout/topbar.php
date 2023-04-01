@@ -62,6 +62,8 @@
         <!-- chart js -->
         <script src="../public/chart/chart.js"></script>
 
+       
+
         <style>
             .marca {
                 width: 100%;

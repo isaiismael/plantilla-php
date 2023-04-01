@@ -178,7 +178,7 @@
     </script>
 
     <script src="../public/app/publico/js/lib/jquery-flex-label/jquery.flex.label.js"></script>
-    <script src="../vista/inicio/js/preguntas.js"></script>
+    
     <script type="application/javascript">
         (function($) {
             $(document).ready(function() {

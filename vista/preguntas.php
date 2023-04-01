@@ -10,16 +10,16 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
 <?php require('./layout/topbar.php'); ?>
 <!-- luego se carga el sidebar -->
 <?php require('./layout/sidebar.php'); ?>
-
+<script src="../vista/inicio/js/preguntas.js"></script>
 <!-- inicio del contenido principal -->
 <body>
 
 <div class="page-content">
     <section id="preguntas">
         <h3>preguntas</h3>
-        <div id="preguntas-contenedor">
+        <form id="preguntas-contenedor">
 
-        </div>
+        </form>
        
     </section>
    
