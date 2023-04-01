@@ -1,5 +1,7 @@
 <?php
  session_start();
+ include("../modelo/conexion.php");
+
 if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
    header('location:login/login.php');
   }
@@ -18,7 +20,10 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
     <section id="preguntas">
         <h3>preguntas</h3>
         <form id="preguntas-contenedor">
-
+       <?php include("../modelo/modelo_crear_preguntas.php"); 
+       
+       ?>
+       <a href=""><button name="btnsgt" value="ok" type="submit" class="btn btn-primary btn-rounded">Siguiente</button></a>
         </form>
        
     </section>
