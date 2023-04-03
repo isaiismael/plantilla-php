@@ -1,5 +1,5 @@
 <?php 
-
+if(!empty($_POST['edad'])){
 $edad=$_POST['edad'];
 $subdominio = "Expresiva";
 $contador = 0;
@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
     echo "<li><input type='radio' name='pregunta".$contador."' value='2'> 2</li>";
     echo "<li><input type='radio' name='pregunta".$contador."' value='1'> 1</li>";
     echo "<li><input type='radio' name='pregunta".$contador."' value='0'> 0</li>";
-    echo "<li><input type='radio' name='pregunta".$contador."' value='dk'> DK</li>";
+    echo "<li><input type='radio' name='pregunta".$contador."' value='DK'> DK</li>";
     echo "</lu>";
     $contador++;
   }
@@ -26,5 +26,6 @@ if ($result->num_rows > 0) {
 
 // Cerrar la conexión
 $conexion->close();
+}
 ?>
 

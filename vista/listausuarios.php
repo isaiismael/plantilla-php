@@ -34,7 +34,7 @@ FROM `usuarios`
   while ($datos = $sql->fetch_object()) { ?>
     <tr>
       <td><?= $datos->id?></th>
-      <td><?= $datos->Nombre." ".$datos->apellido?></td>
+      <td><?= $datos->Nombre." ".$datos->apellidos?></td>
       <td><?= $datos->rol?></td>
       <td><?= $datos->cargo?></td>
       <td>

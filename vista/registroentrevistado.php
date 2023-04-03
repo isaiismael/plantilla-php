@@ -42,7 +42,7 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
       <input type="date" id="fecha-entrevista" name="fecha-entrevista" style="padding: 8px 16px; border-radius: 4px; border: none; background-color: #fff;">
     </div>
     <a href="preguntas.php">
-      <button type="submit" style="padding: 8px 16px; border-radius: 4px; border: none; background-color: #6200ee; color: #fff; font-size: 16px; cursor: pointer;">Enviar</button>
+      <button name="btnentrevistado"type="submit" style="padding: 8px 16px; border-radius: 4px; border: none; background-color: #6200ee; color: #fff; font-size: 16px; cursor: pointer;">Enviar</button>
     </a>
     </div>
   </form>
