@@ -1,9 +1,3 @@
-<?php
-session_start();
-if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
-     header('location:login/login.php');
- }
-?>
 
 <!-- primero se carga el topbar -->
 <?php require('./layout/topbar.php'); ?>
@@ -23,6 +17,9 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
 
  <div class="row">
     <form action="" method="POST">
+    <div class="fl-flex-label mb-4 px-2 col-12 col-md-6">
+            <input type="text" placeholder="Cedula" class="input input__text" name="txtcedula">
+        </div>
         <div class="fl-flex-label mb-4 px-2 col-12 col-md-6">
             <input type="text" placeholder="Nombre" class="input input__text" name="txtnombre">
         </div>
@@ -36,6 +33,7 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
         <div class="fl-flex-label mb-4 px-2 col-12 col-md-6">
             <input type="password" placeholder="Contraseña" class="input input__text" name="txtpassword">
         </div>
+        
         <div class="fl-flex-label mb-4 px-2 col-12 col-md-6">
         <select class="form-select" aria-label="Default select example" name="sidrol">
                 <option selected>Seleccion el rol</option>
@@ -61,7 +59,7 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
         </select>
         </div>
         <div class="text-right pd-2">
-            <a href="" class="btn btn-secondary btn-rounded">Atras</a>
+            <a href="listausuarios.php" class="btn btn-secondary btn-rounded">Atras</a>
             <button name="btnregistar"value="ok" type="submit" class="btn btn-primary btn-rounded">Registar</button>
         </div>
        

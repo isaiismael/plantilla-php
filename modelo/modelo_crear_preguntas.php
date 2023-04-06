@@ -1,21 +1,19 @@
 <?php 
-if(!empty($_POST['edad'])){
-$edad=$_POST['edad'];
-$subdominio = "Expresiva";
+$subdominio = "Receptiva";
 $contador = 0;
 // Ejecutar la consulta y obtener los resultados
-$result = $conexion->query("SELECT `id`, `numero_pregunta`, `subdominio`, `dominio`, `edad`, `operador`, `enunciado` FROM `preguntas` WHERE `subdominio` = 'Expresiva' and `edad` = $edad;");
+$result = $conexion->query("SELECT `id`, `numero_pregunta`, `subdominio`, `dominio`, `edad`, `operador`, `enunciado` FROM `preguntas` WHERE `subdominio` = 'Receptiva';");
 
 // Mostrar las preguntas en una tabla HTML
 if ($result->num_rows > 0) {
   
   while($row = $result->fetch_assoc()) {
     echo "<lu>";
-    echo "<p>" . $row["enunciado"] . "</p>";
-    echo "<li><input type='radio' name='pregunta".$contador."' value='2'> 2</li>";
-    echo "<li><input type='radio' name='pregunta".$contador."' value='1'> 1</li>";
-    echo "<li><input type='radio' name='pregunta".$contador."' value='0'> 0</li>";
-    echo "<li><input type='radio' name='pregunta".$contador."' value='DK'> DK</li>";
+    echo "<p>" .$row["numero_pregunta"].".  ". $row["enunciado"] . "</p>";
+    echo "<li><input type='radio' name='".$row["numero_pregunta"]."' value='2'> 2</li>";
+    echo "<li><input type='radio' name='".$row["numero_pregunta"]."' value='1'> 1</li>";
+    echo "<li><input type='radio' name='".$row["numero_pregunta"]."' value='0'> 0</li>";
+    echo "<li><input type='radio' name='".$row["numero_pregunta"]."' value='DK'> DK</li>";
     echo "</lu>";
     $contador++;
   }
@@ -26,6 +24,6 @@ if ($result->num_rows > 0) {
 
 // Cerrar la conexión
 $conexion->close();
-}
+
 ?>
 

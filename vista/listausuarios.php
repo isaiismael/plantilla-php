@@ -33,7 +33,7 @@ FROM `usuarios`
   <?php 
   while ($datos = $sql->fetch_object()) { ?>
     <tr>
-      <td><?= $datos->id?></th>
+      <td><?= $datos->cedula?></th>
       <td><?= $datos->Nombre." ".$datos->apellidos?></td>
       <td><?= $datos->rol?></td>
       <td><?= $datos->cargo?></td>
