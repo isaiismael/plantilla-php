@@ -17,19 +17,22 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
     <div class="page-content">
         <section id="preguntas">
             <h3>Subdominio</h3>
-            <h2 id="subdominio">Receptiva</h2>
-            <form id="preguntas-contenedor" action="expresiva.php">
+            <h2 id="subdominio">Expresiva</h2>
+            <form id="preguntas-contenedor">
                 <?php
                 include("../modelo/conexion.php");
-                require("../modelo/modelo_crear_preguntas.php");
+                require("../modelo/modelo_crear_preguntas_expresiva.php");
 
                 ?>
-                Regla basal<input type="text" name="" id="mregla">
+				<div id="resultados">
+                <label>Regla basal</label>
+				<input type="text" name="" id="mregla">
                 Numero de DK<input type="text" name="" id="mdk">
                 Suma de 2+1<input type="text" name="" id="m1">
                 Numero de 0<input type="text" name="" id="m0">
                 Puntaje en Subdominio Receptiva<input type="text" name="" id="total">
-                <button id="btnevaluar" value="ok" type="submit" class="btn btn-primary btn-rounded">Siguiente</button>
+				</div>
+                <button name="btnsgt" value="ok" type="submit" class="btn btn-primary btn-rounded">Siguiente</button>
             </form>
         </section>
 

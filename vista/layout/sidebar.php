@@ -13,7 +13,7 @@
                     <span>
                         <img src="../public/img-inicio/programar.png" class="img-inicio" alt="">
                         <!-- <i class="fas fa-sort-amount-up-alt"></i> -->
-                        <span class="lbl">Test Vineland</span>
+                        <span class="lbl">E</span>
                     </span>
                     <ul>
                         <li>
@@ -30,14 +30,14 @@
                         </li>
                     </ul>
                 </li>
-
+        <?php       if ($_SESSION["idrol"] == 1) { ?>
                 <li class="grey with-sub">
                     
                     <span>
                    
-                        <img src="../public/img-inicio/programar.png" class="img-inicio" alt="">
+                        <img src="../public/img-inicio/pngwing.com.png" class="img-inicio" style="color:aqua">
                         <!-- <i class="fas fa-sort-amount-up-alt"></i> -->
-                        <span class="lbl">Usuarios</span>
+                        <span class="lbl">Parametrizar</span>
                    
                     </span>
                     
@@ -45,12 +45,17 @@
                         <li>
                             <a href="listausuarios.php" class="">
                                 <i class="fas fa-th-list icono-submenu"></i>
-                                <span class="lbl">Lista de Usuarios</span>
+                                <span class="lbl">Usuarios</span>
+                            </a>
+                        </li> <li>
+                            <a href="listausuarios.php" class="">
+                                <i class="fas fa-th-list icono-submenu"></i>
+                                <span class="lbl">Empresas</span>
                             </a>
                         </li>
                     </ul>
                 </li>
-
+         <?php } ?>
                 <li class="red">
                     <a href="acerca.php" class="">
                         <img src="../public/img-inicio/info.png" class="img-inicio" alt="">

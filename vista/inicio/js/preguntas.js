@@ -4,11 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let cantidad0 = 0;
   let cantidad1 = 0;
   let cantidadDK = 0;
-  let idreglabasal = 0;
-  
+  let idreglabasal = -1;
+
   function ReglaBasal() {
-    alert("ingreso a la regla basal")
-   
+
     const valor1 = document.getElementById("m1");
     const valor0 = document.getElementById("m0");
     const valor2 = document.getElementById("mregla");
@@ -25,14 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (respuestas[i] === respuestas[i - 1] && respuestas[i] === respuestas[i - 2] && respuestas[i] === respuestas[i - 3]) {
           reglaBasal = true;
           idreglabasal = (i - 3);
-          alert(idreglabasal)
           break;
         }
       }
     }
 
-    if (reglaBasal) {
-      if (idreglabasal !== 0) {
+    if (reglaBasal == true) {
+      if (idreglabasal !== -1) {
 
         for (let i = idreglabasal + 4; i <= radios.length; i++) {
           if (respuestas[i] === '0') {
@@ -49,10 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
         let item_antesbasal = idreglabasal * 2;
-        alert(cantidad0);
-        alert(cantidad1);
-        alert(cantidadDK);
-        alert(item_antesbasal);
+
         valor1.value = cantidad1;
         valor2.value = item_antesbasal;
         valor0.value = cantidad0;
@@ -76,10 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
           cantidadDK++;
         }
       }
-      alert(cantidad0);
-        alert(cantidad1);
-        alert(cantidadDK);
-        
+
       valor1.value = cantidad1;
       valor2.value = 0;
       valor0.value = cantidad0;
@@ -88,11 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
   }
-  formulario.addEventListener('submit', (evento) => {
-    evento.preventDefault();
+
+  $("#btnsgt").click(function () {
+    window.location.href("expresiva.php")
+  });
+  $("#btnevaluar").click(function () {
     ReglaBasal();
   });
-
   // necesito que cuando este la regla basal solamente en ese momento se empize a contar 
   /* agrega a un evento que hace que cada vez que cambian un radio evalue cual es su valor y mira cuando se debe mirar
   */
@@ -108,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (valorSeleccionado === '0') {
       contador++;
-      alert("Cantidad de 0 contados : " + contador)
       if (contador === 4) {
         ReglaBasal();
       }

@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
+  header('location:login/login.php');
+}
+?>
 
 
 <?php require('./layout/topbar.php'); ?>

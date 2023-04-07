@@ -4,7 +4,7 @@
         and !empty($_POST["txtusuario"]) and !empty($_POST["txtpassword"])
         and !empty($_POST["sidrol"]) and !empty($_POST["sidsexo"])and !empty($_POST["scargo"])
         and !empty($_POST["txtcedula"])) {
-            $nombre = $_POST["nombre"];
+            $nombre = $_POST["txtnombre"];
             $apellido =$_POST["txtapellido"];
             $usuario = $_POST["txtusuario"];
             $password = $_POST["txtpassword"];

@@ -1,8 +1,8 @@
 <?php 
-$subdominio = "Receptiva";
+$subdominio = "Expresiva";
 $contador = 0;
 // Ejecutar la consulta y obtener los resultados
-$result = $conexion->query("SELECT `id`, `numero_pregunta`, `subdominio`, `dominio`, `edad`, `enunciado` FROM `preguntas` WHERE `subdominio` = 'Receptiva';");
+$result = $conexion->query("SELECT `id`, `numero_pregunta`, `subdominio`, `dominio`, `edad`, `enunciado` FROM `preguntas` WHERE `subdominio` = '$subdominio';");
 
 // Mostrar las preguntas en una tabla HTML
 if ($result->num_rows > 0) {
@@ -26,4 +26,3 @@ if ($result->num_rows > 0) {
 $conexion->close();
 
 ?>
-

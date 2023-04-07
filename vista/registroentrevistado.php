@@ -9,13 +9,15 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
 <?php require('./layout/topbar.php'); ?>
 <!-- luego se carga el sidebar -->
 <?php require('./layout/sidebar.php'); ?>
-
 <!-- inicio del contenido principal -->
+<?php include("../modelo/conexion.php"); ?>
+
+ <!-- <script src="../vista/inicio/js/Entrevistado.js"></script> -->
 
 
 <div class="page-content">
- 
-  <form action="receptiva.php" method="POST">
+
+  <form method="POST" id="datos_entrevistado" action="receptiva.php">
     <div style="display: flex; flex-direction: column; align-items: center; padding: 24px; background-color: #f5f5f5; border-radius: 8px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);">
       <h2 style="font-size: 24px; margin-bottom: 24px;">Formulario</h2>
       <div style="display: flex; flex-direction: column; margin-bottom: 16px; width: 50%;" name="div-nombre">
@@ -106,10 +108,10 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
       </div>
       <div class="dropdown-divider"></div>
       <div style="display: flex; flex-direction: row; margin-bottom: 16px;">
-      <button name="btnentrevistado" type="submit" value="ok" class="btn btn-primary btn-rounded"">Enviar</button>
+        <button id="btnentrevistado" type="submit" value="ok" class="btn btn-primary btn-rounded"">Enviar</button>
     </div>
     </div>
-    
+    <?php include("../controlador/controlador_ingresar_entrevistado_respondedor.php"); ?>
   </form>
 
 </div>
