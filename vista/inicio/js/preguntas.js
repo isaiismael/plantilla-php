@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
         valor0.value = cantidad0;
         valordk.value = cantidadDK;
         total.value = parseInt(valor1.value) + parseInt(valor2.value) + parseInt(valor0.value) + parseInt(valordk.value);
+
+       
       }
 
     }
@@ -77,15 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
       valor0.value = cantidad0;
       valordk.value = cantidadDK;
       total.value = parseInt(valor1.value) + parseInt(valor2.value) + parseInt(valor0.value) + parseInt(valordk.value);
-
     }
   }
 
-  $("#btnsgt").click(function () {
-    window.location.href("expresiva.php")
-  });
   $("#btnevaluar").click(function () {
     ReglaBasal();
+    if (confirm('¿Desea continuar?')) {
+      window.location.href= 'expresiva.php';
+    }
   });
   // necesito que cuando este la regla basal solamente en ese momento se empize a contar 
   /* agrega a un evento que hace que cada vez que cambian un radio evalue cual es su valor y mira cuando se debe mirar
@@ -103,7 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (valorSeleccionado === '0') {
       contador++;
       if (contador === 4) {
-        ReglaBasal();
+        if (confirm("Se detectaron 4 '0' seguidos desea continuar con el proximo menu?: ")) {
+          ReglaBasal();
+          if (confirm('¿Desea continuar?')) {
+            window.location.href= 'expresiva.php';
+          }
+        }
       }
     } else {
       contador = 0;

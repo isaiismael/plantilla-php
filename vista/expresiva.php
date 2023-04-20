@@ -9,7 +9,7 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
 <?php require('./layout/topbar.php'); ?>
 <!-- luego se carga el sidebar -->
 <?php require('./layout/sidebar.php'); ?>
-<script src="../vista/inicio/js/preguntas.js"></script>
+<script src="../vista/inicio/js/preguntas_expresiva.js"></script>
 <!-- inicio del contenido principal -->
 
 <body>
@@ -32,7 +32,7 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
                 Numero de 0<input type="text" name="" id="m0">
                 Puntaje en Subdominio Receptiva<input type="text" name="" id="total">
 				</div>
-                <button name="btnsgt" value="ok" type="submit" class="btn btn-primary btn-rounded">Siguiente</button>
+                <button name="btnevaluar" value="" type="submit" class="btn btn-primary btn-rounded">Siguiente</button>
             </form>
         </section>
 
