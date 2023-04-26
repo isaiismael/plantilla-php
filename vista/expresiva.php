@@ -2,14 +2,23 @@
 session_start();
 if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
   header('location:login/login.php');
+  
 }
-?>
+if($_GET["total"] != null){
+    
+    $total = $_GET["total"];
+    
+    $_SESSION['receptiva'] = $total;
+}
 
+
+?>
+<script src="../vista/inicio/js/preguntas_expresiva.js"></script>
 <!-- primero se carga el topbar -->
 <?php require('./layout/topbar.php'); ?>
 <!-- luego se carga el sidebar -->
 <?php require('./layout/sidebar.php'); ?>
-<script src="../vista/inicio/js/preguntas_expresiva.js"></script>
+
 <!-- inicio del contenido principal -->
 
 <body>
@@ -18,11 +27,11 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
         <section id="preguntas">
             <h3>Subdominio</h3>
             <h2 id="subdominio">Expresiva</h2>
+            <!-- Escritura.php  -->
             <form id="preguntas-contenedor">
                 <?php
                 include("../modelo/conexion.php");
-                require("../modelo/modelo_crear_preguntas_expresiva.php");
-
+                include("../modelo/modelo_crear_preguntas_expresiva.php");
                 ?>
 				<div id="resultados">
                 <label>Regla basal</label>
@@ -30,12 +39,11 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
                 Numero de DK<input type="text" name="" id="mdk">
                 Suma de 2+1<input type="text" name="" id="m1">
                 Numero de 0<input type="text" name="" id="m0">
-                Puntaje en Subdominio Receptiva<input type="text" name="" id="total">
+                Puntaje en Subdominio Receptiva<input type="text" name="" id="expresiva">
 				</div>
-                <button name="btnevaluar" value="" type="submit" class="btn btn-primary btn-rounded">Siguiente</button>
+                <button id="btnexpresiva" value="presionado" type="submit" class="btn btn-primary btn-rounded">Siguiente</button>
             </form>
         </section>
-
 
     </div>
 

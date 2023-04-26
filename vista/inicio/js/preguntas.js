@@ -53,8 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         valor0.value = cantidad0;
         valordk.value = cantidadDK;
         total.value = parseInt(valor1.value) + parseInt(valor2.value) + parseInt(valor0.value) + parseInt(valordk.value);
-
-       
+        alert(total)
       }
 
     }
@@ -82,10 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  $("#btnevaluar").click(function () {
+  document.getElementById("btnevaluar").addEventListener("click", function(event) {
+    // Hacer algo aquí, como mostrar una alerta o hacer una llamada AJAX
+    event.preventDefault();
     ReglaBasal();
+    // Redirigir al usuario a otra página
     if (confirm('¿Desea continuar?')) {
-      window.location.href= 'expresiva.php';
+      const total = document.getElementById("total").value;
+      window.location.href= 'expresiva.php?total='+total;
     }
   });
   // necesito que cuando este la regla basal solamente en ese momento se empize a contar 

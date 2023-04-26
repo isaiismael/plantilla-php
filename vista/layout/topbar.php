@@ -55,7 +55,8 @@
         </script>
         <script src="../public/pnotify/js/pnotify.buttons.js">
         </script>
-
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        
         <!-- alpine js -->
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 

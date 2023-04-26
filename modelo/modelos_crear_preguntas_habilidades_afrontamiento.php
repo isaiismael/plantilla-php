@@ -1,5 +1,5 @@
 <?php 
-$subdominio = "Habilidades Afrontamiento";
+$subdominio = "Habilidades de afrontamiento";
 $contador = 0;
 // Ejecutar la consulta y obtener los resultados
 $result = $conexion->query("SELECT `id`, `numero_pregunta`, `subdominio`, `dominio`, `edad`, `enunciado` FROM `preguntas` WHERE `subdominio` = '$subdominio';");

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const formulario = document.getElementById('preguntas-contenedor');
+ 
     let contador = 0;
     let cantidad0 = 0;
     let cantidad1 = 0;
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const valor0 = document.getElementById("m0");
       const valor2 = document.getElementById("mregla");
       const valordk = document.getElementById("mdk");
-      const total = document.getElementById("total");
+      const total = document.getElementById("expresiva");
       const respuestas = [];
       const radios = document.querySelectorAll('input[type="radio"]:checked');
       for (let i = 0; i < radios.length; i++) {
@@ -78,15 +79,19 @@ document.addEventListener('DOMContentLoaded', () => {
         valor0.value = cantidad0;
         valordk.value = cantidadDK;
         total.value = parseInt(valor1.value) + parseInt(valor2.value) + parseInt(valor0.value) + parseInt(valordk.value);
-        
+        alert("se es")
   
       }
     }
 
-    $("#btnevaluar").click(function () {
+    document.getElementById("btnexpresiva").addEventListener("click", function(event) {
+      // Hacer algo aquí, como mostrar una alerta o hacer una llamada AJAX
+      event.preventDefault();
       ReglaBasal();
+      // Redirigir al usuario a otra página
       if (confirm('¿Desea continuar?')) {
-        window.location.href= 'expresiva.php';
+        const total = document.getElementById("expresiva").value;
+        window.location.href= 'Escritura.php?total='+total;
       }
     });
     // necesito que cuando este la regla basal solamente en ese momento se empize a contar 
@@ -107,6 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (contador === 4) {
           if (confirm("Se detectaron 4 '0' seguidos desea continuar con el proximo menu?: ")) {
             ReglaBasal();
+            const total = document.getElementById("expresiva").value;
+            window.location.href= 'Escritura.php?total='+total;
           }
         }
       } else {

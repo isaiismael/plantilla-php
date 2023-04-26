@@ -1,0 +1,59 @@
+{
+    "tabla": 1,
+    "rangoedad": 
+    [
+        {
+            "edad":[{
+                "años": [
+                    {
+                        "min":0,
+                        "max":0
+                    }
+                ],
+                "meses":[
+                    {
+                        "min":0,
+                        "max":0
+                    }
+                ],
+                "dias":[
+                    {
+                        "min":0,
+                        "max":30
+                    }
+                ],
+                "dominio": "comunicativo",
+                "subdominio":[
+                    {
+                        "nombre":"Receptiva",
+                        "puntuacion":[
+                            {
+                                "min":8,
+                                "max":40,
+                                "vscore":24
+                            },
+                            {
+                                "min":7,
+                                "max":7,
+                                "vscore":21
+                            }
+                        ]
+                    },
+                    {
+                        "nombre":"Expresiva",
+                        "puntuacion":[
+                            {
+                                "min":12,
+                                "max":108,
+                                "vscore":24
+                            }
+                        ]
+                    }
+                ]
+
+            }]
+            
+            
+        }
+    ]
+}
