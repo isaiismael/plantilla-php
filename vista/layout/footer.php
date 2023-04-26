@@ -15,7 +15,7 @@
 
     <!-- datatables -->
     <script src="../public/app/publico/js/lib/datatables-net/datatables.min.js"></script>
-
+    <script src="../inicio/js/estilo-preguntas.js"></script>
 
 
     <!-- sweet alert -->

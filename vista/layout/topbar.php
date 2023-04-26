@@ -38,6 +38,7 @@
 
         <!-- mis estilos -->
         <link href="../public/principal/css/estilos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../vista/inicio/css/preguntas.css">
 
         <!-- pNotify -->
         <link href="../public/pnotify/css/pnotify.css" rel="stylesheet" />

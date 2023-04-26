@@ -33,6 +33,7 @@ if($_GET["total"] != null){
                 include("../modelo/conexion.php");
                 include("../modelo/modelo_crear_preguntas_expresiva.php");
                 ?>
+                
 				<div id="resultados">
                 <label>Regla basal</label>
 				<input type="text" name="" id="mregla">
