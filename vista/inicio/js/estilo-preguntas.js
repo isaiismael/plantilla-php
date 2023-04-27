@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-const preguntas = document.querySelectorAll('.preguntas .contenedor-pregunta');
+const preguntas = document.querySelectorAll('.contenedor-pregunta');
 preguntas.forEach((pregunta) => {
 	pregunta.addEventListener('click', (e) => {
 		e.currentTarget.classList.toggle('activa');

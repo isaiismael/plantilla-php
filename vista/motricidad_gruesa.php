@@ -8,7 +8,7 @@ if($_GET["total"] != null){
     
     $total = $_GET["total"];
     
-    $_SESSION['fina'] = $total;
+    $_SESSION['afrontamiento'] = $total;
 }
 ?>
 

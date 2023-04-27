@@ -42,6 +42,42 @@ if ($_GET["total"] != null) {
                     <td>Expresiva</td>
                     <td><?= $_SESSION['expresiva']?></td>
                 </tr>
+                <tr>
+                    <td>Comunitario</td>
+                    <td><?= $_SESSION['comunitario']?></td>
+                </tr>
+                <tr>
+                    <td>Juego</td>
+                    <td><?= $_SESSION['juego']?></td>
+                </tr>
+                <tr>
+                    <td>Personal</td>
+                    <td><?= $_SESSION['personal']?></td>
+                </tr>
+                <tr>
+                    <td>Domestico</td>
+                    <td><?= $_SESSION['domestico']?></td>
+                </tr>
+                <tr>
+                    <td>Escritura</td>
+                    <td><?= $_SESSION['escritura']?></td>
+                </tr>
+                <tr>
+                    <td>Habilidades de Afrontamiento</td>
+                    <td><?= $_SESSION['afrontamiento']?></td>
+                </tr>
+                <tr>
+                    <td>Relaciones interpersonales</td>
+                    <td><?= $_SESSION['interpersonales']?></td>
+                </tr>
+                <tr>
+                    <td>Motricidad Gruesa</td>
+                    <td><?= $_SESSION['gruesa']?></td>
+                </tr>
+                <tr>
+                    <td>Fina</td>
+                    <td><?= $_SESSION['fina']?></td>
+                </tr>
             </table>
 
         </section>
