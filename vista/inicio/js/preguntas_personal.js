@@ -84,12 +84,15 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById("btnevaluar").addEventListener("click", function (event) {
     // Hacer algo aquí, como mostrar una alerta o hacer una llamada AJAX
     event.preventDefault();
-    ReglaBasal();
-    // Redirigir al usuario a otra página
     if (confirm('¿Desea continuar?')) {
       const total = document.getElementById("total").value;
       window.location.href = 'Domestico.php?total=' + total;
     }
+  });
+  
+  document.getElementById("btncargar").addEventListener("click", function (event) {
+    event.preventDefault();
+    ReglaBasal();
   });
   // necesito que cuando este la regla basal solamente en ese momento se empize a contar 
   /* agrega a un evento que hace que cada vez que cambian un radio evalue cual es su valor y mira cuando se debe mirar

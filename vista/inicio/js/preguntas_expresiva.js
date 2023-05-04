@@ -79,16 +79,16 @@ document.addEventListener('DOMContentLoaded', () => {
         valor0.value = cantidad0;
         valordk.value = cantidadDK;
         total.value = parseInt(valor1.value) + parseInt(valor2.value) + parseInt(valor0.value) + parseInt(valordk.value);
-        alert("se es")
-  
+    
       }
     }
-
+    document.getElementById("btncargar").addEventListener("click", function (event) {
+      event.preventDefault();
+      ReglaBasal();
+    });
     document.getElementById("btnexpresiva").addEventListener("click", function(event) {
       // Hacer algo aquí, como mostrar una alerta o hacer una llamada AJAX
       event.preventDefault();
-      ReglaBasal();
-      // Redirigir al usuario a otra página
       if (confirm('¿Desea continuar?')) {
         const total = document.getElementById("expresiva").value;
         window.location.href= 'Escritura.php?total='+total;

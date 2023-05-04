@@ -79,8 +79,12 @@ if ($_GET["total"] != null) {
                     <td><?= $_SESSION['fina']?></td>
                 </tr>
             </table>
-
+            <?php
+                include("../modelo/conexion.php");
+            ?>
         </section>
+
+        
         <canvas id="myChart" width="600" height="400"></canvas>
     </div>
 

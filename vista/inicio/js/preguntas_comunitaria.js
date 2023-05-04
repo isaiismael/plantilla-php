@@ -81,11 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
         total.value = parseInt(valor1.value) + parseInt(valor2.value) + parseInt(valor0.value) + parseInt(valordk.value);
       }
     }
-    document.getElementById("btnevaluar").addEventListener("click", function(event) {
-      // Hacer algo aquí, como mostrar una alerta o hacer una llamada AJAX
+    document.getElementById("btncargar").addEventListener("click", function (event) {
       event.preventDefault();
       ReglaBasal();
-      // Redirigir al usuario a otra página
+    });
+
+    document.getElementById("btnevaluar").addEventListener("click", function(event) {
+      event.preventDefault();
       if (confirm('¿Desea continuar?')) {
         const total = document.getElementById("total").value;
         window.location.href= '../vista/Relaciones_interpersonales.php?total='+total;

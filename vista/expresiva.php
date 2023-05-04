@@ -43,6 +43,7 @@ if($_GET["total"] != null){
                 Puntaje en Subdominio Receptiva<input type="text" name="" id="expresiva">
 				</div>
                 <button id="btnexpresiva" value="presionado" type="submit" class="btn btn-primary btn-rounded">Siguiente</button>
+                <button id="btncargar" class="btn btn-primary btn-rounded" onclick="ReglaBasal()">Evaluar</button>
             </form>
         </section>
 
