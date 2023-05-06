@@ -15,7 +15,7 @@ body{
 }
 .formulario{
     position: relative;
-    max-width: 900px;
+    max-width: auto;
     width: 100%;
     border-radius: 6px;
     padding: 30px;

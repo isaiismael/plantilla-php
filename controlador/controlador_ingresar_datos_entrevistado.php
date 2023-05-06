@@ -1,7 +1,7 @@
 <?php
 
     if(!empty($_SESSION['receptiva'])){
-       $idusuario = $_SESSION['id_usuario'];
+       $nombre = $_SESSION['id_usuario'];
        $receptiva = $_SESSION['receptiva'];
        $expresiva = $_SESSION['expresiva'];
        $comunitario= $_SESSION['comunitario'];

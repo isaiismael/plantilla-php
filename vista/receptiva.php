@@ -3,6 +3,43 @@ session_start();
 if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
   header('location:login/login.php');
 }
+$nombrecompleto = $_POST["nombre"];
+$fecha_n =$_POST["fecha_n"];
+$email = $_POST["email"];
+$telef =$_POST["telefono"];
+$genero =$_POST["sexo"];
+$grado =$_POST["grado"];
+$gradomax =$_POST["gradomax"];
+$colegio =$_POST["colegio"];
+$diagnosis =$_POST["diagnosis"];
+$edadcronologica =$_POST["edad"];
+$razon =$_POST["razon"];
+
+$idresponder =$_POST["idrespondedor"];
+$nombrecompletorespon =$_POST["nombreresopondedor"];
+$generorespon =$_POST["sexorespondedor"];
+$tiporelacion =$_POST["relacion"];
+$telefonoresp =$_POST["telefonorespondedor"];
+
+$_SESSION["nombre"]= $nombrecompleto;
+$_SESSION["fecha_n"]=$fecha_n;
+$_SESSION["email"]=$email;
+$_SESSION["telefono"]=$telef;
+$_SESSION["sexo"]=$genero;
+$_SESSION["grado"]=$grado;
+$_SESSION["gradomax"]=$gradomax;
+$_SESSION["colegio"]=$colegio;
+$_SESSION["diagnosis"]=$diagnosis;
+$_SESSION["edad"]=$edadcronologica;
+$_SESSION["razon"]=$razon;
+
+$_SESSION["idrespondedor"] =$idresponder ;
+$_SESSION["nombreresopondedor"]= $nombrecompletorespon;
+$_SESSION["sexorespondedor"]=$generorespon;
+$_SESSION["relacion"]=$tiporelacion;
+$_SESSION["telefonorespondedor"]=$telefonoresp;
+
+
 ?>
 
 <!-- primero se carga el topbar -->
