@@ -30,6 +30,11 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
                         <span class="title">Datos Personales</span>
 
                         <div class="fields">
+                        <div class="input-field">
+                                <label>ID Entrevistado</label>
+                                <input id="identrevistado" type="text" placeholder="C.C , C.E, T.I" required>
+                            </div>
+
                             <div class="input-field">
                                 <label>Nombre Completo</label>
                                 <input id="nombre" type="text" placeholder="Ingresa tu nombre" required>
@@ -53,6 +58,7 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
                                     document.getElementById("edad").value = edadTexto;
                                 }
                             </script>
+                          
                             <div class="input-field">
                                 <label>Email</label>
                                 <input id="email" type="text" placeholder="Entra el correo electronico" required>

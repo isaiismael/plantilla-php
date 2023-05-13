@@ -81,6 +81,9 @@ if ($_GET["total"] != null) {
             </table>
             <?php
                 include("../modelo/conexion.php");
+              
+                include("../controlador/controlador_ingresar_resultados.php");
+
             ?>
         </section>
 

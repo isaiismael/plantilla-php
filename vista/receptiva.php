@@ -3,6 +3,7 @@ session_start();
 if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
   header('location:login/login.php');
 }
+$identrevistado = $_POST["identrevistado"];
 $nombrecompleto = $_POST["nombre"];
 $fecha_n =$_POST["fecha_n"];
 $email = $_POST["email"];
@@ -21,6 +22,7 @@ $generorespon =$_POST["sexorespondedor"];
 $tiporelacion =$_POST["relacion"];
 $telefonoresp =$_POST["telefonorespondedor"];
 
+$_SESSION["identrevistado"]= $identrevistado;
 $_SESSION["nombre"]= $nombrecompleto;
 $_SESSION["fecha_n"]=$fecha_n;
 $_SESSION["email"]=$email;
@@ -59,7 +61,8 @@ $_SESSION["telefonorespondedor"]=$telefonoresp;
                 <?php
                 include("../modelo/conexion.php");
                 include("../modelo/modelo_crear_preguntas.php");
-
+                include("../controlador/controlador_ingresar_entrevistado_respondedor.php");
+                include("../controlador/controlador_ingresar_entrevistado.php");
                 ?>
                  Regla basal<input type="text" name="" id="mregla">
                 Numero de DK<input type="text" name="" id="mdk">

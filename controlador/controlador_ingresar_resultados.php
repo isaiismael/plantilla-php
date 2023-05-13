@@ -1,7 +1,8 @@
 <?php
 
     if(!empty($_SESSION['receptiva'])){
-       $nombre = $_SESSION['id_usuario'];
+        $identrevistado = $_SESSION['id_entrevistado'];
+       $idusuario = $_SESSION['id_usuario'];
        $receptiva = $_SESSION['receptiva'];
        $expresiva = $_SESSION['expresiva'];
        $comunitario= $_SESSION['comunitario'];
@@ -18,7 +19,7 @@
         Escritura, Personal, Domestico, Comunitario, Relaciones_Interpersonales, Juego_y_tiempo_libre,
         Habilidades_de_afrontamiento, Motricidad_Gruesa, Motricidad_Fina)
         VALUES
-        (3, $idusuario,$receptiva,$expresiva, $escritura, $personal, $domestico, $comunitario,
+        ($identrevistado, $idusuario,$receptiva,$expresiva, $escritura, $personal, $domestico, $comunitario,
         $interpersonales, $juego, $afrontamiento, $gruesa, $fina);");
     }
 ?>
