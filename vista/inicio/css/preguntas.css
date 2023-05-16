@@ -1,5 +1,6 @@
 :root {
 	--primario: #0b9afa;
+	--contestada:#0aad20;
 	--gris-claro: #B8B8B8;
 	--sombra: 0 0 13px 0 rgba(185,185,185, .25);
 }
@@ -27,6 +28,9 @@
 	border: 2px solid var(--primario);
 }
 
+.contenedor-pregunta.contestada {
+	border: 2px solid var(--contestada);
+}
 .pregunta {
 	font-weight: 700;
 	font-size: 20px;
@@ -40,6 +44,16 @@
 	width: 14px;
 }
 
+.age{
+	background: black;
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	display: inline-block;
+	justify-content: space-between;
+	align-items: center;
+}
 
 .respuesta {
 	color: #808080;

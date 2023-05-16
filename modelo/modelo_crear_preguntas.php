@@ -10,6 +10,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     
     echo "<div class='contenedor-pregunta'>";
+    echo "<p class='age'>" .$row["edad"]."->";
     echo "<p class='pregunta'>" .$row["numero_pregunta"].".  ". $row["enunciado"] ."<i class='fa-solid fa-chevron-down' style='color: #2967d1;'></i></p>";
     echo "<div class='respuesta'>";
     echo "<lu>";
