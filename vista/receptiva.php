@@ -17,7 +17,7 @@ $edadcronologica =$_POST["edad"];
 $razon =$_POST["razon"];
 
 $idresponder =$_POST["idrespondedor"];
-$nombrecompletorespon =$_POST["nombreresopondedor"];
+$nombrecompletorespon =$_POST["nombrerespondedor"];
 $generorespon =$_POST["sexorespondedor"];
 $tiporelacion =$_POST["relacion"];
 $telefonoresp =$_POST["telefonorespondedor"];
@@ -55,16 +55,13 @@ $_SESSION["telefonorespondedor"]=$telefonoresp;
    
     <div class="page-content">
         <section id="preguntas">
-            <h3>Subdominio</h3>
             <h2 id="subdominio">Receptiva</h2>
             <form id="preguntas-contenedor">
-                <?php
+            <?php
                 include("../modelo/conexion.php");
                 include("../modelo/modelo_crear_preguntas.php");
-                include("../controlador/controlador_ingresar_entrevistado_respondedor.php");
-                include("../controlador/controlador_ingresar_entrevistado.php");
                 ?>
-                 Regla basal<input type="text" name="" id="mregla">
+                Regla basal<input type="text" name="" id="mregla">
                 Numero de DK<input type="text" name="" id="mdk">
                 Suma de 2+1<input type="text" name="" id="m1">
                 Numero de 0<input type="text" name="" id="m0">
@@ -73,7 +70,10 @@ $_SESSION["telefonorespondedor"]=$telefonoresp;
                 <button id="btncargar" class="btn btn-primary btn-rounded" onclick="ReglaBasal()">Evaluar</button>
             </form>
         </section>
-
+        <?php
+                 //include("../modelo/conexion.php");
+                 //include("../controlador/controlador_ingresar_entrevistado_respondedor.php");
+                ?>
 
     </div>
 

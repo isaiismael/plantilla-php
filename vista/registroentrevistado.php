@@ -13,7 +13,7 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
 <!-- luego se carga el sidebar -->
 <?php require('./layout/sidebar.php'); ?>
 <!-- inicio del contenido principal -->
-<?php include("../modelo/conexion.php"); ?>
+
 
 <!-- <script src="../vista/inicio/js/Entrevistado.js"></script> -->
 
@@ -32,17 +32,17 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
                         <div class="fields">
                         <div class="input-field">
                                 <label>ID Entrevistado</label>
-                                <input id="identrevistado" type="text" placeholder="C.C , C.E, T.I" required>
+                                <input id="identrevistado" type="text" placeholder="C.C , C.E, T.I" name="identrevistado" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Nombre Completo</label>
-                                <input id="nombre" type="text" placeholder="Ingresa tu nombre" required>
+                                <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Fecha de nacimiento</label>
-                                <input id="fecha_n" type="date" placeholder="Ingresa la Fecha de Nacimiento" onchange="calculoedad()" required>
+                                <input id="fecha_n" name="fecha_n" type="date" placeholder="Ingresa la Fecha de Nacimiento" onchange="calculoedad()" required>
                             </div>
                             <script>
                                 function calculoedad() {
@@ -61,51 +61,51 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
                           
                             <div class="input-field">
                                 <label>Email</label>
-                                <input id="email" type="text" placeholder="Entra el correo electronico" required>
+                                <input id="email" name="email" type="text" placeholder="Entra el correo electronico" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Numero Telefonico</label>
-                                <input type="number" id="telefono" placeholder="Entra el numero telefonico" required>
+                                <input type="number" name="telefono" id="telefono" placeholder="Entra el numero telefonico" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Genero</label>
-                                <select id="sexo" required>
+                                <select name="sexo" id="sexo" required>
                                     <option disabled selected>Selecciona el Genero</option>
-                                    <option>Masculino</option>
-                                    <option>Femenino</option>
-                                    <option>Otros</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                    <option value="3">Otros</option>
                                 </select>
                             </div>
 
                             <div class="input-field">
                                 <label>Grado</label>
-                                <input id="grado" type="text" placeholder="Grado Actual" required>
+                                <input name="grado" id="grado" type="text" placeholder="Grado Actual" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Grado Max</label>
-                                <input id="gradomax" type="text" placeholder="Ingresa el Grado Maximo cursado" required>
+                                <input id="gradomax" name="gradomax" type="text" placeholder="Ingresa el Grado Maximo cursado" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Colegio/Otros</label>
-                                <input id="colegio" type="text" placeholder="Ingrese el colegio u otro" required>
+                                <input id="colegio" name="colegio" type="text" placeholder="Ingrese el colegio u otro" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Diagnosis</label>
-                                <input id="diagnosis" type="text" placeholder="Ingrese el diagnosis del entrevistado" required>
+                                <input id="diagnosis" type="text" name="diagnosis" placeholder="Ingrese el diagnosis del entrevistado" required>
                             </div>
                             <div class="input-field">
                                 <label>Edad Cronologica</label>
-                                <input id="edad" type="text" placeholder="AA/MM/DD" readonly>
+                                <input id="edad" name="edad" type="text" placeholder="AA/MM/DD" readonly>
                             </div>
 
                             <div class="input-field">
                                 <label>Razon Entrevista</label>
-                                <input id="razon" type="text" placeholder="Ingrese la razon de la entrevista" required>
+                                <input id="razon" name="razon" type="text" placeholder="Ingrese la razon de la entrevista" required>
                             </div>
 
                         </div>
@@ -117,45 +117,45 @@ if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
                         <div class="fields">
                             <div class="input-field">
                                 <label>ID respondedor</label>
-                                <input id="idrespondedor" type="text" placeholder="C.C , C.E, T.I" required>
+                                <input id="idrespondedor" name="idrespondedor" type="text" placeholder="C.C , C.E, T.I" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Nombre Completo</label>
-                                <input id="nombrerespondedor" type="number" placeholder="Ingresar nombre completo" required>
+                                <input id="nombrerespondedor" name="nombrerespondedor" type="text" placeholder="Ingresar nombre completo" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Genero</label>
-                                <select required id="sexorespondedor">
+                                <select required id="sexorespondedor" name="sexorespondedor">
                                     <option disabled selected>Selecciona el Genero</option>
-                                    <option>Masculino</option>
-                                    <option>Femenino</option>
-                                    <option>Otros</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                    <option value="3">Otros</option>
                                 </select>
                             </div>
                             <div class="input-field">
                                 <label>Telefono</label>
-                                <input id="telefonorespondedor" type="text" placeholder="Ingresa el telefono del respondedor" required>
+                                <input id="telefonorespondedor" name="telefonorespondedor" type="text" placeholder="Ingresa el telefono del respondedor" required>
                             </div>
 
                             <div class="input-field">
                                 <label>Tipo de Relacion</label>
-                                <select id="relacion" required>
+                                <select id="relacion" name="relacion" required>
                                     <option disabled selected>Selecciona el tipo de relacion</option>
-                                    <option>Madre</option>
-                                    <option>Padre</option>
-                                    <option>Hijo</option>
-                                    <option>Hermano</option>
-                                    <option>Hermana</option>
-                                    <option>Tio</option>
-                                    <option>Tia</option>
-                                    <option>Primo</option>
-                                    <option>Prima</option>
-                                    <option>Madrastra</option>
-                                    <option>Padrastro</option>
-                                    <option>Familiar</option>
-                                    <option>Otros</option>
+                                    <option value="1">Madre</option>
+                                    <option value="2">Padre</option>
+                                    <option value="3">Hijo</option>
+                                    <option value="4">Hermano</option>
+                                    <option value="5">Hermana</option>
+                                    <option value="6">Tio</option>
+                                    <option value="7">Tia</option>
+                                    <option value="8">Primo</option>
+                                    <option value="9">Prima</option>
+                                    <option value="10">Madrastra</option>
+                                    <option value="11">Padrastro</option>
+                                    <option value="12">Familiar</option>
+                                    <option value="13">Otros</option>
                                 </select>
                             </div>
                         </div>
