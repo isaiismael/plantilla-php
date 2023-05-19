@@ -1,7 +1,18 @@
+
 document.addEventListener('DOMContentLoaded', () => {
 	const preguntas = document.querySelectorAll('.contenedor-pregunta');
-	preguntas.forEach((pregunta) => {
+	window.addEventListener('load', () => {
 
+		preguntas.forEach((pregunta, index) => {
+			if (index % 2 === 0) {
+				pregunta.classList.toggle('azul');
+			} else {
+				pregunta.classList.toggle('blanco');
+			}
+		});
+	})
+
+	preguntas.forEach((pregunta) => {
 		pregunta.addEventListener('click', (e) => {
 			e.currentTarget.classList.toggle('activa');
 			const respuesta = pregunta.querySelector('.respuesta');
@@ -22,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 			// [Opcional] Reiniciamos las demas preguntas
 			preguntas.forEach((elemento) => {
-				
+
 				if (pregunta !== elemento) {
 					elemento.classList.remove('activa');
 					elemento.querySelector('.respuesta').style.maxHeight = null;

@@ -27,7 +27,7 @@ body{
     position: relative;
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    color: #000000;
 }
 .formulario header::before{
     content: "";
@@ -72,7 +72,7 @@ form.secActive .form.first{
     font-size: 16px;
     font-weight: 500;
     margin: 6px 0;
-    color: #333;
+    color: #000000;
 }
 .formulario form .fields{
     display: flex;
@@ -89,15 +89,15 @@ form .fields .input-field{
 .input-field label{
     font-size: 12px;
     font-weight: 500;
-    color: #2e2e2e;
+    color: #111111;
 }
 .input-field input, select{
     outline: none;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: #030303;
     border-radius: 5px;
-    border: 1px solid #aaa;
+    border: 1px solid #3b3b3b;
     padding: 0 15px;
     height: 42px;
     margin: 8px 0;
@@ -108,10 +108,10 @@ form .fields .input-field{
 }
 .input-field select,
 .input-field input[type="date"]{
-    color: #707070;
+    color: #000000;
 }
 .input-field input[type="date"]:valid{
-    color: #333;
+    color: #000000;
 }
 .formulario form button, .backBtn{
     display: flex;
