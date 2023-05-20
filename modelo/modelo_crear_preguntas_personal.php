@@ -2,7 +2,7 @@
 $subdominio = "Personal";
 $contador = 0;
 // Ejecutar la consulta y obtener los resultados
-$result = $conexion->query("SELECT `id`, `numero_pregunta`, `subdominio`, `dominio`, `edad`, `enunciado` FROM `preguntas` WHERE `subdominio` = '$subdominio';");
+$result = $conexion->query("SELECT `id`, `numero_pregunta`, `subdominio`, `dominio`, `edad`, `enunciado`, `icono` FROM `preguntas` WHERE `subdominio` = '$subdominio';");
 
 // Mostrar las preguntas en una tabla HTML
 if ($result->num_rows > 0) {
@@ -12,6 +12,7 @@ if ($result->num_rows > 0) {
     echo "<div class='contenedor-pregunta'>";
     echo "<p class='age'>" .$row["edad"]."->";
     echo "<p class='pregunta'>" .$row["numero_pregunta"].".  ". $row["enunciado"] ."<i class='fa-solid fa-chevron-down' style='color: #2967d1;'></i></p>";
+    echo "<img src='../vista/inicio/img/".$row["icono"].".png'>";
     echo "<div class='respuesta'>";
     echo "<lu>";
     echo "<li><input type='radio' name='".$row["numero_pregunta"]."' value='2'> 2</li>";

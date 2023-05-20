@@ -24,8 +24,46 @@ if($_GET["total"] != null){
    
     <div class="page-content">
         <section id="preguntas">
-            <h3>Subdominio</h3>
-            <h2 id="subdominio">Comunitario</h2>
+            <h2>Subdominio</h2>
+            <h3 id="subdominio">Comunitario</h3>
+            <div class="imagenes-contenedor">
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Telephone skills.png">
+                    <span class="imagen-texto">Telephone skills</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Rules,Rights and safety.png">
+                    <span class="imagen-texto">Rules,Rights and safety</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Times and Dates.png">
+                    <span class="imagen-texto">Times and Dates</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Job Skills.png">
+                    <span class="imagen-texto">Job Skills</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Computer Skills.png">
+                    <span class="imagen-texto">Computer Skills</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Money Skills.png">
+                    <span class="imagen-texto">Money Skills</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Restaurant Skills.png">
+                    <span class="imagen-texto">Restaurant Skills</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Television and Radio.png">
+                    <span class="imagen-texto">Television and Radio</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Going Places Independently.png">
+                    <span class="imagen-texto">Going Places Independently</span>
+                </div>
+            </div>
             <form id="preguntas-contenedor">
                 <?php
                 include("../modelo/conexion.php");

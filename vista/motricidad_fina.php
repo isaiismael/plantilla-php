@@ -23,8 +23,22 @@ if($_GET["total"] != null){
    
     <div class="page-content">
         <section id="preguntas">
-            <h3>Subdominio</h3>
-            <h2 id="subdominio">Motricidad fina</h2>
+            <h2>Subdominio</h2>
+            <h3 id="subdominio">Motricidad fina</h3>
+            <div class="imagenes-contenedor">
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Manipulating Objects.png">
+                    <span class="imagen-texto">Manipulating Objects</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Drawing and Using Scissors.png">
+                    <span class="imagen-texto">Drawing and Using Scissors</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Using Keyboard.png">
+                    <span class="imagen-texto">Using Keyboard</span>
+                </div>
+            </div>
             <form id="preguntas-contenedor">
                 <?php
                 include("../modelo/conexion.php");

@@ -13,7 +13,7 @@
                     <span>
                         <img src="../public/img-inicio/programar.png" class="img-inicio" alt="">
                         <!-- <i class="fas fa-sort-amount-up-alt"></i> -->
-                        <span class="lbl">E</span>
+                        <span class="lbl">Evaluaciones</span>
                     </span>
                     <ul>
                         <li>

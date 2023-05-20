@@ -36,9 +36,13 @@
         <!-- form -->
         <link rel="stylesheet" type="text/css" href="../public/app/publico/css/lib/jquery-flex-label/jquery.flex.label.css"> <!-- Original -->
 
+        <!-- UniIcon CDN Link  -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
         <!-- mis estilos -->
         <link href="../public/principal/css/estilos.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../vista/inicio/css/preguntas.css">
+        <link rel="stylesheet"  href="../vista/inicio/css/preguntas.css">
+        <link rel="stylesheet" href="../vista/inicio/css/pbar.css" type="text/css"/>
 
         <!-- pNotify -->
         <link href="../public/pnotify/css/pnotify.css" rel="stylesheet" />
@@ -57,14 +61,15 @@
         <script src="../public/pnotify/js/pnotify.buttons.js">
         </script>
         <script src="https://d3js.org/d3.v7.min.js"></script>
-        
+
         <!-- alpine js -->
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
         <!-- chart js -->
         <script src="../public/chart/chart.js"></script>
 
-       
+        <script src="../vista/inicio/js/pbar.js" defer></script>
+
 
         <style>
             .marca {
@@ -133,14 +138,14 @@
                                     Administrador
                                 </h6>
                             </div>
-             
+
                             <div class="dropdown user-menu">
                                 <button class="dropdown-toggle" id="dd-user-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="../public/app/publico/img/user.svg" alt="">
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right pt-0" aria-labelledby="dd-user-menu">
 
-                                    <h5 class="p-2 text-center bg-primary"><?= $_SESSION["nombre"]." ". $_SESSION["apellido"] ?></h5>
+                                    <h5 class="p-2 text-center bg-primary"><?= $_SESSION["nombre"] . " " . $_SESSION["apellido"] ?></h5>
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-user"></span>Perfil</a>
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-lock"></span>Cambiar contraseña</a>
 
@@ -168,4 +173,3 @@
 
         <div class="mobile-menu-left-overlay">
         </div>
-

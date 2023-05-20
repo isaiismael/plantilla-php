@@ -24,8 +24,38 @@ if($_GET["total"] != null){
    
     <div class="page-content">
         <section id="preguntas">
-            <h3>Subdominio</h3>
-            <h2 id="subdominio">Relaciones Interpersonales</h2>
+            <h2>Subdominio</h2>
+            <h3 id="subdominio">Relaciones Interpersonales</h3>
+            <div class="imagenes-contenedor">
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Responding to Others.png">
+                    <span class="imagen-texto">Responding to Others</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Expressing and Recognizin Emotions.png">
+                    <span class="imagen-texto">Expressing and Recognizin Emotions</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Imitating.png">
+                    <span class="imagen-texto">Imitating</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Social Communication.png">
+                    <span class="imagen-texto">Social Communication</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Thoughtfulness.png">
+                    <span class="imagen-texto">Thoughtfulness</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Friendship.png">
+                    <span class="imagen-texto">Friendship</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Dating.png">
+                    <span class="imagen-texto">Dating</span>
+                </div>
+            </div>
             <form id="preguntas-contenedor">
                 <?php
                 include("../modelo/conexion.php");

@@ -1,13 +1,12 @@
 <?php
 session_start();
 if (empty($_SESSION['nombre']) and empty($_SESSION['apellido'])) {
-  header('location:login/login.php');
- 
+    header('location:login/login.php');
 }
-if($_GET["total"] != null){
-    
+if ($_GET["total"] != null) {
+
     $total = $_GET["total"];
-    
+
     $_SESSION['juego'] = $total;
 }
 ?>
@@ -20,25 +19,55 @@ if($_GET["total"] != null){
 <!-- inicio del contenido principal -->
 
 <body>
-   
+
     <div class="page-content">
         <section id="preguntas">
-            <h3>Subdominio</h3>
-            <h2 id="subdominio">Habilidades de Afrontamiento</h2>
+            <h2>Subdominio</h2>
+            <h3 id="subdominio">Habilidades de Afrontamiento</h3>
+            <div class="imagenes-contenedor">
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Manners.png">
+                    <span class="imagen-texto">Manners</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Apologizing.png">
+                    <span class="imagen-texto">Apologizing</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Responsibility.png">
+                    <span class="imagen-texto">Responsibility</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Apropiate Social Caution.png">
+                    <span class="imagen-texto">Apropiate Social Caution</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Transitions.png">
+                    <span class="imagen-texto">Transitions</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Controlling impulses.png">
+                    <span class="imagen-texto">Controlling impulses</span>
+                </div>
+                <div class="imagen">
+                    <img src="../vista/inicio/img/Keeping Secrets.png">
+                    <span class="imagen-texto">Keeping Secrets</span>
+                </div>
+            </div>
             <form id="preguntas-contenedor">
                 <?php
                 include("../modelo/conexion.php");
                 require("../modelo/modelos_crear_preguntas_habilidades_afrontamiento.php");
 
                 ?>
-				<div id="resultados">
-                <label>Regla basal</label>
-				<input type="text" name="" id="mregla">
-                Numero de DK<input type="text" name="" id="mdk">
-                Suma de 2+1<input type="text" name="" id="m1">
-                Numero de 0<input type="text" name="" id="m0">
-                Puntaje en Subdominio Receptiva<input type="text" name="" id="total">
-				</div>
+                <div id="resultados">
+                    <label>Regla basal</label>
+                    <input type="text" name="" id="mregla">
+                    Numero de DK<input type="text" name="" id="mdk">
+                    Suma de 2+1<input type="text" name="" id="m1">
+                    Numero de 0<input type="text" name="" id="m0">
+                    Puntaje en Subdominio Receptiva<input type="text" name="" id="total">
+                </div>
                 <button id="btnevaluar" value="presionado" type="submit" class="btn btn-primary btn-rounded">Siguiente</button>
                 <button id="btncargar" class="btn btn-primary btn-rounded" onclick="ReglaBasal()">Evaluar</button>
             </form>
