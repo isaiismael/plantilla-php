@@ -43,6 +43,7 @@
         <link href="../public/principal/css/estilos.css" rel="stylesheet">
         <link rel="stylesheet"  href="../vista/inicio/css/preguntas.css">
         <link rel="stylesheet" href="../vista/inicio/css/pbar.css" type="text/css"/>
+        <link rel="stylesheet" href="../vista/inicio/css/step-wizard.css" type="text/css"/>
 
         <!-- pNotify -->
         <link href="../public/pnotify/css/pnotify.css" rel="stylesheet" />
