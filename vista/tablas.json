@@ -1,59 +1,45 @@
 {
-    "tabla": 1,
-    "rangoedad": 
-    [
-        {
-            "edad":[{
-                "años": [
-                    {
-                        "min":0,
-                        "max":0
-                    }
-                ],
-                "meses":[
-                    {
-                        "min":0,
-                        "max":0
-                    }
-                ],
-                "dias":[
-                    {
-                        "min":0,
-                        "max":30
-                    }
-                ],
-                "dominio": "comunicativo",
-                "subdominio":[
-                    {
-                        "nombre":"Receptiva",
-                        "puntuacion":[
-                            {
-                                "min":8,
-                                "max":40,
-                                "vscore":24
-                            },
-                            {
-                                "min":7,
-                                "max":7,
-                                "vscore":21
-                            }
-                        ]
-                    },
-                    {
-                        "nombre":"Expresiva",
-                        "puntuacion":[
-                            {
-                                "min":12,
-                                "max":108,
-                                "vscore":24
-                            }
-                        ]
-                    }
-                ]
-
-            }]
-            
-            
+    "data": [
+      {
+        "age": {
+          "start": "0:0:0",
+          "end": "0:0:30"
+        },
+        "score": {
+          "communication": {
+            "receptive": "8-40",
+            "expressive": "12-108"
+          },
+          "daily_living_skill": {
+            "personal": "5-82"
+          },
+          "socialization": {
+            "interpersonal_relationships": "21-76"
+          },
+          "motor_skills": {
+            "gross": "9-62",
+            "fine": "5-80"
+          },
+          "v_scale_score": 24
         }
+      },
+      {
+        "age": {
+          "start": "0:0:0",
+          "end": "0:0:30"
+        },
+        "score": {
+          "communication": {},
+          "daily_living_skill": {
+            "personal": "4"
+          },
+          "socialization": {},
+          "motor_skills": {
+            "leisure_time": "8"
+          },
+          "v_scale_score": 23
+        }
+      }
     ]
-}
+  }
+  
