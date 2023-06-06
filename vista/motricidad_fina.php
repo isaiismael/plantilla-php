@@ -22,6 +22,54 @@ if($_GET["total"] != null){
 <body>
    
     <div class="page-content">
+    <section class="step-wizard">
+            <ul class="step-wizard-list">
+                <li class="step-wizard-item ">
+                    <span class="progress-count">1</span>
+                    <span class="progress-label">Receptiva</span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">2</span>
+                    <span class="progress-label">Expresiva</span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">3</span>
+                    <span class="progress-label">Escritura</span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">4</span>
+                    <span class="progress-label">Personal</span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">5</span>
+                    <span class="progress-label">Domestico</span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">6</span>
+                    <span class="progress-label">Comunitario</span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">7</span>
+                    <span class="progress-label">Relaciones Interpersonales</span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">8</span>
+                    <span class="progress-label">Juego y Tiempo Libre</span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">9</span>
+                    <span class="progress-label">Habilidades de Afrontamiento </span>
+                </li>
+                <li class="step-wizard-item">
+                    <span class="progress-count">10</span>
+                    <span class="progress-label">Gruesa</span>
+                </li>
+                <li class="step-wizard-item current-item">
+                    <span class="progress-count">11</span>
+                    <span class="progress-label">Fina</span>
+                </li>
+            </ul>
+        </section>
         <section id="preguntas">
             <h2>Subdominio</h2>
             <h3 id="subdominio">Motricidad fina</h3>

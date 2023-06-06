@@ -39,14 +39,14 @@
             </span>
             <ul>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="receptiva.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Receptiva</span>
                     </a>
                 </li>
                 <?php if (isset($_SESSION['expresiva'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="expresiva.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Expresiva</span>
                     </a>
@@ -54,7 +54,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['escritura'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="Escritura.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Escritura</span>
                     </a>
@@ -62,7 +62,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['personal'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="Personal.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Personal</span>
                     </a>
@@ -70,7 +70,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['domestico'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="Domestico.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Domestico</span>
                     </a>
@@ -78,7 +78,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['comunitario'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="Comunitario.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Comunitario</span>
                     </a>
@@ -86,7 +86,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['interpersonales'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="Relaciones_Interpersonales.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Relaciones Interpersonales</span>
                     </a>
@@ -94,7 +94,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['juego'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="Juego_y_tiempo_libre.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Juegos y Tiempo libre</span>
                     </a>
@@ -102,7 +102,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['afrontamiento'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="Habilidades_afrontamiento.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Habilidades de Afrontamiento</span>
                     </a>
@@ -110,7 +110,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['gruesa'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="motricidad_gruesa.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Motricidad Gruesa</span>
                     </a>
@@ -118,7 +118,7 @@
                 <?php }?>
                 <?php if (isset($_SESSION['fina'])) {?>
                 <li>
-                    <a href="listausuarios.php" class="">
+                    <a href="motricidad_fina.php" class="">
                         <i class="fas fa-th-list icono-submenu"></i>
                         <span class="lbl">Motricidad Fina</span>
                     </a>
