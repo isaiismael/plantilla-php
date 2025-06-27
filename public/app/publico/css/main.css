@@ -15272,9 +15272,9 @@ body.sidebar-hidden .side-menu-addl + .page-content {
 .side-menu a:hover {
     background: rgb(0, 0, 0) !important;
 }
-.side-menu a.activo {
+/* .side-menu a.activo {
     background: rgb(11, 150, 214) !important;
-}
+} */
 .side-menu span:hover {
     background: rgb(0, 0, 0) !important;
     color: white !important;

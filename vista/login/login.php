@@ -21,27 +21,29 @@
             <img src="img/bg.svg">
         </div>
         <div class="login-content">
-            <form method="POST" action="../inicio.php">
+            <form method="POST" action="">
                 <img src="img/avatar.svg">
                 <h2 class="title">BIENVENIDO</h2>
                 <!-- AQUI VA EL MENSAJE DE ERROR -->
-                    <!-- <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
+                <!-- <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
                         <small>mensaje de error</small>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                    </div> -->                
+                    </div> -->
+                <?php
+                include "../../modelo/conexion.php";
+                include "../../controlador/login.php";
+                ?>
                 <div class="input-div one">
                     <div class="i">
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="div">
-                        <h5>Usuario</h5>
+                        <!-- <h5>Usuario</h5> -->
                         <input id="usuario" type="text"
                             class="input" name="usuario"
-                            title="ingrese su nombre de usuario" autocomplete="usuario" value="">
-
-
+                            title="ingrese su nombre de usuario" value="docente">
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -52,8 +54,6 @@
                         <h5>Contraseña</h5>
                         <input type="password" id="input" class="input"
                             name="password" title="ingrese su clave para ingresar" autocomplete="current-password">
-
-
                     </div>
                 </div>
                 <div class="view">

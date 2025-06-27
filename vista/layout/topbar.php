@@ -125,7 +125,7 @@
 
                             <div class="dropdown dropdown-notification">
                                 <h6 class="text-light mt-2">
-                                    Administrador
+                                    <?php echo $_SESSION['nombre'] ?>
                                 </h6>
                             </div>
 
@@ -135,7 +135,7 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right pt-0" aria-labelledby="dd-user-menu">
 
-                                    <h5 class="p-2 text-center bg-primary">Nombre y apellido del usuario</h5>
+                                    <h5 class="p-2 text-center bg-primary"><?php echo $_SESSION['nombre'] ?></h5>
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-user"></span>Perfil</a>
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-lock"></span>Cambiar contraseña</a>
 
