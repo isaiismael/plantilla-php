@@ -140,7 +140,7 @@
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-lock"></span>Cambiar contraseña</a>
 
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="./login/login.php">
+                                    <a class="dropdown-item" href="../controlador/controlador_cerrar_sesion.php">
                                         <span class="font-icon glyphicon glyphicon-log-out"></span>salir
                                     </a>
                                 </div>
