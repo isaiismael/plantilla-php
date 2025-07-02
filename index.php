@@ -1,3 +1,7 @@
+<?php
+// Iniciar sesión para poder acceder a las notificaciones
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,6 +9,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Escolar - Selección de Grado</title>
+    <!-- Añadir PNotify -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.buttons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.brighttheme.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -38,19 +46,54 @@
             color: white;
             border: none;
             border-radius: 10px;
-            padding: 45px 50px;
+            padding: 30px 20px;
             font-size: 18px;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-decoration: none;
             min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         
         .grade-button:hover {
             background-color: #2980b9;
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .grade-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        
+        .file-stats {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .stat-number {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.9;
         }
         
         .empty-message {
@@ -95,11 +138,31 @@
         <div class="grades-container">
             <?php
             include_once 'modelo/conexion.php';
-            $grado_seccion = $conexion->query("select * from grado_seccion where estado='1' order by grado, seccion");
+            $grado_seccion = $conexion->query("SELECT gs.*, 
+                (SELECT COUNT(*) FROM archivo_compartido WHERE id_grado_seccion = gs.id_grado_seccion) AS archivos_compartidos,
+                (SELECT COUNT(*) FROM trabajo WHERE id_grado_seccion = gs.id_grado_seccion) AS trabajos_subidos 
+                FROM grado_seccion gs 
+                WHERE gs.estado='1' 
+                ORDER BY gs.grado, gs.seccion");
+                
             if ($grado_seccion->num_rows > 0) {
                 while ($row = $grado_seccion->fetch_object()) {
-                    echo "<a href='vista/inicio.php?id_grado_seccion={$row->id_grado_seccion}' class='grade-button'>";
-                    echo "{$row->grado} {$row->seccion}";
+                    echo "<a href='mis_archivos.php?id_grado_seccion={$row->id_grado_seccion}' class='grade-button'>";
+                    echo "<div class='grade-name'>{$row->grado}° {$row->seccion}</div>";
+                    
+                    // Estadísticas de archivos
+                    echo "<div class='file-stats'>";
+                    echo "<div class='stat-item'>";
+                    echo "<div class='stat-number'>{$row->archivos_compartidos}</div>";
+                    echo "<div class='stat-label'>Archivos<br>compartidos</div>";
+                    echo "</div>";
+                    
+                    echo "<div class='stat-item'>";
+                    echo "<div class='stat-number'>{$row->trabajos_subidos}</div>";
+                    echo "<div class='stat-label'>Trabajos<br>subidos</div>";
+                    echo "</div>";
+                    echo "</div>";
+                    
                     echo "</a>";
                 }
             } else {
@@ -108,5 +171,34 @@
             ?>
         </div>
     </div>
+    
+    <!-- JavaScript y PNotify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.buttons.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            <?php if(isset($_SESSION['success'])): ?>
+                new PNotify({
+                    title: 'Éxito',
+                    text: '<?php echo $_SESSION["success"]; ?>',
+                    type: 'success',
+                    styling: 'brighttheme'
+                });
+                <?php unset($_SESSION['success']); ?>
+            <?php endif; ?>
+
+            <?php if(isset($_SESSION['error'])): ?>
+                new PNotify({
+                    title: 'Error',
+                    text: '<?php echo $_SESSION["error"]; ?>',
+                    type: 'error',
+                    styling: 'brighttheme'
+                });
+                <?php unset($_SESSION['error']); ?>
+            <?php endif; ?>
+        });
+    </script>
 </body>
 </html>

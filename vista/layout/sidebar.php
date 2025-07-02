@@ -10,14 +10,22 @@
         </li>
 
 
-
         <li class="red">
             <a href="subir_archivos.php" class="activo">
-                <img src="../public/img-inicio/numeros.png" class="img-inicio" alt="">
+                <img src="../public/img-inicio/cuota.png" class="img-inicio" alt="">
                 <!-- <i class="fas fa-exclamation"></i> -->
-                <span class="lbl">SUBIR ARCHIVOS</span>
+                <span class="lbl">COMPARTIR ARCHIVOS</span>
             </a>
         </li>
+
+        <li class="red">
+            <a href="ver_trabajos.php" class="activo">
+                <img src="../public/img-inicio/archivo.png" class="img-inicio" alt="">
+                <!-- <i class="fas fa-exclamation"></i> -->
+                <span class="lbl">VER TRABAJOS</span>
+            </a>
+        </li>
+
 
     </ul>
 </nav>

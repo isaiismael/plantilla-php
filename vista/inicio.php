@@ -136,11 +136,106 @@ if (empty($_SESSION['id'])) {
     ul li:nth-child(1) .activo {
       background: rgb(11, 150, 214) !important;
     }
+
+    /* Nuevos estilos para los botones de acción */
+    .grade-actions {
+      display: flex;
+      gap: 6px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .action-button {
+      padding: 6px 10px;
+      border-radius: 4px;
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      transition: all 0.3s ease;
+      flex: 1;
+    }
+
+    .edit-button {
+      background-color: #3498db;
+    }
+
+    .edit-button:hover {
+      background-color: #2980b9;
+      color: white;
+    }
+
+    .delete-button {
+      background-color: #e74c3c;
+    }
+
+    .delete-button:hover {
+      background-color: #c0392b;
+      color: white;
+    }
+
+    .new-grade-button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .new-grade-button:hover {
+      background-color: #219955;
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .add-button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
   </style>
+
+  <!-- Código para mostrar notificaciones con PNotify -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      <?php if (isset($_SESSION['success'])): ?>
+        new PNotify({
+          title: 'Éxito',
+          text: '<?php echo $_SESSION["success"]; ?>',
+          type: 'success',
+          styling: 'bootstrap3'
+        });
+        <?php unset($_SESSION['success']); ?>
+      <?php endif; ?>
+
+      <?php if (isset($_SESSION['error'])): ?>
+        new PNotify({
+          title: 'Error',
+          text: '<?php echo $_SESSION["error"]; ?>',
+          type: 'error',
+          styling: 'bootstrap3'
+        });
+        <?php unset($_SESSION['error']); ?>
+      <?php endif; ?>
+    });
+  </script>
 
   <h2 class="section-title">Grados y Secciones Disponibles</h2>
 
+  <!-- Botón para registrar nuevo grado -->
+  <div class="add-button-container">
+    <a href="registrar_grado.php" class="new-grade-button">+ Registrar Nuevo Grado y Sección</a>
+  </div>
+
   <div class="grades-container">
+
     <?php
     include_once '../modelo/conexion.php';
     $grado_seccion = $conexion->query("SELECT * FROM grado_seccion ORDER BY grado, seccion");
@@ -152,7 +247,7 @@ if (empty($_SESSION['id'])) {
         echo "<div class='grade-section-container'>";
 
         // Grade button
-        echo "<a href='inicio.php?id_grado_seccion={$row->id_grado_seccion}' class='grade-button {$disabled_class}'>";
+        echo "<a href='#' class='grade-button {$disabled_class}'>";
         echo "{$row->grado}° {$row->seccion}";
         echo "</a>";
 
@@ -165,6 +260,12 @@ if (empty($_SESSION['id'])) {
         // Status text
         echo "<div class='status-text'>" . ($estado ? 'Habilitado' : 'Deshabilitado') . "</div>";
 
+        // Nuevos botones de acción
+        echo "<div class='grade-actions'>";
+        echo "<a href='editar_grado.php?id={$row->id_grado_seccion}' class='action-button edit-button'>Editar</a>";
+        echo "<a href='javascript:void(0)' onclick='confirmarEliminar({$row->id_grado_seccion})' class='action-button delete-button'>Eliminar</a>";
+        echo "</div>";
+
         echo "</div>";
       }
     } else {
@@ -172,6 +273,7 @@ if (empty($_SESSION['id'])) {
     }
     ?>
   </div>
+
 
   <script>
     function toggleGradeStatus(id_grado_seccion, status) {
@@ -245,10 +347,16 @@ if (empty($_SESSION['id'])) {
           checkbox.checked = !status;
         });
     }
+
+    // Función para confirmar eliminación de grado
+    function confirmarEliminar(id_grado_seccion) {
+      if (confirm("¿Está seguro que desea eliminar este grado y sección? Esta acción no se puede deshacer.")) {
+        window.location.href = "../controlador/eliminar_grado.php?id=" + id_grado_seccion;
+      }
+    }
   </script>
 </div>
 <!-- fin del contenido principal -->
-
 
 <!-- por ultimo se carga el footer -->
 <?php require('./layout/footer.php'); ?>
