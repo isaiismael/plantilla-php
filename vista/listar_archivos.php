@@ -108,6 +108,7 @@ $archivos_query = $conexion->query("SELECT * FROM archivo_compartido WHERE id_gr
 
         .btn-edit:hover {
             background-color: #2980b9;
+            color: white;
         }
 
         .btn-download {
@@ -117,6 +118,7 @@ $archivos_query = $conexion->query("SELECT * FROM archivo_compartido WHERE id_gr
 
         .btn-download:hover {
             background-color: #219955;
+            color: white;
         }
 
         .btn-delete {
@@ -126,6 +128,7 @@ $archivos_query = $conexion->query("SELECT * FROM archivo_compartido WHERE id_gr
 
         .btn-delete:hover {
             background-color: #c0392b;
+            color: white;
         }
 
         .empty-message {

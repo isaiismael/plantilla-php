@@ -94,8 +94,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 ?>
-    // Si no es un POST, redirigir a la página de grados
-    header("Location: ../vista/subir_archivos.php");
-    exit;
-}
-?>

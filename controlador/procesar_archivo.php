@@ -78,8 +78,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Location: ../vista/subir_archivos.php");
     exit;
 }
-} else {
-    // Si no es un POST, redirigir a la página de subida
-    header("Location: ../vista/subir_archivos.php");
-    exit;
-}
